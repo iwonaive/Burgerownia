@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/16/20/26/burger-1396639_960_720.png");
+  background-size: contain;
+  background-position: center;
+  line-height: 100px;
+  height: 50vh;
+  width: 100vw;
+  filter: opacity(90%);
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: "Bangers", cursive;
+}
+
+h1 {
+  color: rgb(11, 11, 75);
+  font-size: 135px;
+  text-align: center;
+  line-height: 350px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 60px 0;
+}
+
+h3 {
+  font-size: 23px;
+  margin-top: 30px;
+}
+
+main {
+  width: 90vw;
+  background-color: white;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(165, 246, 255);
+  font-family: "Lato", sans-serif;
+}
+
+.container,
+.container {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div {
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+#div1,
+#div2,
+#div3 {
+  border: 2px solid black;
+  padding: 40px;
+  margin: 0 10px 0 10px;
+  animation: rotating 5s linear alternate;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  text-transform: uppercase;
+  line-height: 90px;
+  font-size: 21px;
+  padding: 10px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.order-pseudobutton {
+  color: lightskyblue;
+  padding: 10px 15px;
+  border: 3px solid lightskyblue;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.order-pseudobutton:hover {
+  color: white;
+  background-color: lightskyblue;
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.fa-regular {
+  font-size: 30px;
+}
